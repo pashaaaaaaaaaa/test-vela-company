@@ -1255,7 +1255,7 @@ footer{
     #btn-send{
         display: block;
         width: 294px;
-        height: 43px;
+        padding: 10px;
         background: #C3002F;
         color: white;
         margin: 0;
