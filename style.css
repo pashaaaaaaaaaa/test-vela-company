@@ -13,7 +13,6 @@
     margin: 0 auto;
     /* width: 100%; */
     width: 1920px;
-    border: 1px solid red;
 }
 /* header page */
 .header{
@@ -31,6 +30,11 @@
     height: 75px;
     margin-right: 120px;
 }
+.header__timing{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .header__text{
     width: 252px;
     white-space: wrap;
@@ -42,11 +46,6 @@
     text-transform: uppercase;
     color: #343434;
     margin-right: 58px;
-}
-.header__timing{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 .header__wrapper{
     width: 407px;
@@ -81,6 +80,9 @@
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     color: #343434;
+}
+.timing__btn{
+ display: none;
 }
 .header__point{
     margin-left: 20px;
@@ -132,6 +134,9 @@
     height: 800px;
     margin-bottom: 100px;
 }
+.header__timingg{
+    display: none;
+}
 .banner__stock{
     display: flex;
     align-items: center;
@@ -161,6 +166,9 @@
     text-align: left;
     margin-left: 460px;
     margin-bottom: 13px;
+}
+.none{
+    display: none;
 }
 .sale__text{
     font-style: normal;
@@ -251,6 +259,9 @@
     flex-direction: column;
     text-align: left;
 }
+.car__price2{
+    display: none;
+}
 .car__name{
     font-style: normal;
     font-weight: 700;
@@ -277,7 +288,7 @@
     justify-content: center;
     align-items: center;
 }
-small{
+.smalll{
     position: absolute;
     font-style: normal;
     font-weight: 700;
@@ -716,6 +727,7 @@ small{
     bottom: 0;
     right: 0;
     opacity: 0.21;
+    z-index: 0;
 }
 .map__local{
     position: absolute;
@@ -736,11 +748,15 @@ small{
     padding-top: 15px;
     padding-left: 22px;
     padding-right: 22px;
+    z-index: 1;
 }
 .map__logo{
     width: 90px;
     height: 75px;
     margin-bottom: 13px;
+}
+.map__logo-sm{
+    display: none;
 }
 .form__phone{
     font-style: normal;
@@ -787,7 +803,7 @@ footer{
 }
 .footer__text{
     width: 1520px;
-    height: 500px;
+    height: auto;
 }
 .text-o{
     font-style: normal;
@@ -797,6 +813,494 @@ footer{
     font-family: 'Open Sans', sans-serif;
     color: #FFFFFF;
 }
-br{
-    margin-bottom: 10px;
+
+/* mobile version */
+
+@media (min-width:320px) and (max-width:500px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .header{
+        padding-top: 10px;
+        padding-left: 23px;
+        padding-bottom: 18px;
+        padding-right: 19px;
+    }
+    .header__logo{
+        width: 73px;
+        height: 62px;
+        margin-right: 90px;
+    }
+    .header__timing{
+        display: none;
+    }
+    .header__timingg{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 10px;
+        height: 175px;
+        width: 100%;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        z-index: 100;
+        justify-content: center;
+        text-align: left;
+        padding: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+
+    }
+    .header__text{
+        width: 329px;
+        height: 26px;
+        font-weight: 400;
+        font-size: 22px;
+        color: white;
+        white-space: nowrap;
+        text-align: left;
+        margin: 0;
+    }
+    .header__wrapper{
+        width: 332px;
+        height: 65px;
+    }
+    .small{
+        color: white;
+    }
+    .timing__btn{
+        display: block;
+        width: 334px;
+        height: 43px;
+        margin-top: 13px;
+    }
+    .header__point{
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+    .phone__icon{
+        width: 30px;
+        height: 30px;
+    }
+    .phone__text{
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    .header__btn{
+        display: none;
+    }
+    /* banner psge */
+    .banner{
+        background-image: url(/img/banner-mini.png);
+        height: 753px;
+        width: 100%;
+        position: relative;
+        background-size: cover;
+        box-sizing: border-box;
+        margin-bottom: 26px;
+    }
+    .banner__stock{
+        display: none;
+    }
+    .stock__text{
+        display: none;
+    }
+    .banner__sale{
+        background: #FFFFFF;
+        margin: 0;
+        opacity: 0.7;
+        width: 100%;
+        height: 160px;
+        box-sizing: border-box;
+        padding: 15px 20px;
+    }
+    #strong{
+        font-size: 26px;
+        font-weight: bold;
+        color: #C3002F;
+        margin-bottom: 9px;
+    }
+    .sale__text{
+        font-size: 24px;
+        font-weight: 400;
+        color: #C3002F;
+        text-align: center;
+    }
+    .none{
+        display: block;
+    }
+    .banner__btn{
+        display: none;
+    }
+    /* nissan page */
+    .nissan-page__wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .nissan-page__wrapper2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .nissan-page__text{
+        font-weight: 700;
+        font-size: 28px;
+        text-align: center;
+        white-space: nowrap;
+        margin-bottom: 20px;
+    }
+    .nissan-page__card{
+        width: 100%;
+        height: 795px;
+        background-image: url(/img/bg-one.svg);
+        background-size: cover;
+        margin: 0;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 8px;
+        margin-bottom: 20px;
+        position: relative;
+        left: 0;
+    }
+    .nissanx-page__card{
+        width: 100%;
+        height: 795px;
+        background-image: url(/img/bg-two.svg);
+        background-size: cover;
+        margin: 0;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 8px;
+        position: relative;
+        left: 0;
+    }
+    .card__wr{
+        display: flex;
+        flex-direction: column;
+        margin-left: -20px;
+    }
+    .car__name{
+        font-size: 26px;
+        text-align: left;
+    }
+    .car__price{
+        margin: 0;
+        padding: 0;
+    }
+    .car__text{
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    .car__img{
+        transform: rotate(180deg);
+        left: -110px;
+        position: relative;
+        width: 238px;
+        height: 46px;
+    }
+    .smalll{
+        transform: rotate(180deg);
+        font-size: 22px;
+    }
+    .car__picture{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 13px;
+    }
+    .car__picture-wr{
+        margin: 0;
+    }
+    .car1{
+        width: 334px;
+        height: 175px;
+        margin: 0;
+        margin-bottom: 7px;
+    }
+    .car2{
+        width: 104px;
+        height: 70px;
+        margin: 0;
+        margin-bottom: 5px;
+        margin-right: 7px;
+    }
+    .car3{
+        width: 104px;
+        height: 70px;
+        margin: 0;
+        margin-bottom: 5px;
+        margin-right: 7px;
+    }
+    .car4{
+        width: 104px;
+        height: 70px;
+        margin: 0;
+    }
+    /* icon page */
+    .car__icon-wrapper{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-left: -20px;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    .car__icon{
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .car__icon-wr1{
+        display: flex;
+        flex-direction: column;
+    }
+    .car__icon-wr2{
+        display: flex;
+        flex-direction: column;
+    }
+    .car__icon-wr1 #casco{
+        margin-left: -4px;
+        white-space: nowrap;
+    }
+    .car__btn-wr{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn__one{
+        width: 260px;
+        height: 43px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .btn__two{
+        width: 260px;
+        height: 43px;
+    }
+    /* benefit page */
+    .benefit{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .benefit__form{
+        background-image: url(/img/orange.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 373px;
+        box-sizing: border-box;
+        padding: 19px 20px;
+        margin-bottom: 50px;
+        margin-top: 30px;
+
+    }
+    .benefit__heading{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 44px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .benefit__text{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 120%;
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        color: #FFFFFF;
+        white-space: nowrap;
+    }
+    .benefit__red{
+        display: none;
+    }
+    .benefit__inp, 
+    .benefit__inp1,
+    .benefit__btn,
+    .benefit__small{
+        display: none;
+    }
+    /* equipment page */
+    .equipment{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .equipment__heading{
+        width: 250px;
+        white-space: wrap;
+        text-align: center;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 32px;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        color: #343434;
+        margin-bottom: 20px;
+    }
+    .equipment__inp{
+        width: 334px;
+        height: 43px;
+    }
+    .down{
+        bottom: 10px;
+        right: 5px;
+    }
+    .equipment__blue{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .blue__car{
+        margin-bottom: 9px;
+    }
+    .equipment__price{
+        margin-bottom: 9px;
+    }
+    .speed{
+        margin-bottom: 20px;
+    }
+    .equipment__btn{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .blue__btn1{
+        width: 235px;
+        height: 43px;
+        margin-bottom: 10px;
+    }
+    .blue__btn2{
+        width: 235px;
+        height: 43px;
+    }
+    /* map page */
+    .map{
+        display: flex;
+        flex-direction: column;
+        background-image: url(/img/mini-map.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 17px;
+        height: 600px;
+    }
+    .map__form{
+        margin: 0;
+        width: 100%;
+        height: 370px;
+        background: #343434;
+        border: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    .map__logo{
+        display: none;
+    }
+    .map__logo-sm{
+        display: block;
+        width: 93px;
+        height: 77px;
+        margin-bottom: 12px;
+    }
+    .form__phone{
+        color: #C3002F;
+        font-size: 22px;
+        margin-bottom: 17px;
+    }
+    #inpt-one{
+        display: block;
+        background: white;
+        opacity: inherit;
+        width: 294px;
+        height: 43px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    #inpt-two{
+        display: block;
+        opacity: inherit;
+        background: white;
+        width: 294px;
+        height: 43px;
+        margin-bottom: 15px;
+        border: none;
+    }
+    #btn-send{
+        display: block;
+        width: 294px;
+        height: 43px;
+        background: #C3002F;
+        color: white;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    #check{
+        display: block;
+        width: 200px;
+        white-space: wrap;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: white;
+    }
+    #check .custom-check2{
+        width: 40px;
+        height: 20px;
+    }
+    /* footer page */
+    footer{
+        width: 100%;
+        padding: 12px 21px;
+    }
+    .footer__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__copy{
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .info{
+        display: inline;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .phone{
+        display: inline;
+    }
+    .footer__text{
+        display: none;
+    }
+
 }
+
+
