@@ -28,3 +28,24 @@ function updateTiming(){
     
 }
 setInterval(updateTiming, 1000);
+
+let openPopUp = document.querySelector('.header__btn')
+let openPopUp2 = document.querySelector('.timing__btn')
+console.log(openPopUp2)
+let windowPopUp = document.querySelector('.form-feed-back')
+let windowPopUp2 = document.querySelector('.pop-up2')
+let closePopUp = document.querySelector('.form-close')
+let closePopUp2 = document.querySelector('.form-close2')
+
+openPopUp.addEventListener('click', ()=>{
+    windowPopUp.style.display ='block'
+})
+openPopUp2.addEventListener('click', ()=>{
+    windowPopUp2.style.display ='block'
+})
+closePopUp.addEventListener('click', ()=>{
+    windowPopUp.style.display ='none'
+})
+closePopUp2.addEventListener('click', ()=>{
+    windowPopUp2.style.display ='none'
+})
