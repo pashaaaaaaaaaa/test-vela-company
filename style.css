@@ -72,6 +72,20 @@
     color: #C3002F;
     font-family: 'Open Sans', sans-serif;
 }
+#days1, 
+#hours1,
+#minutes1,
+#seconds1{
+    margin: 0;
+    margin-bottom: 5px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #C3002F;
+    font-family: 'Open Sans', sans-serif;
+}
 .small{
     font-style: normal;
     font-weight: 400;
@@ -87,7 +101,6 @@
 .header__point{
     margin-left: 20px;
     margin-right: 20px;
-    /* margin-top: -20px; */
 }
 .header__phone{
     display: flex;
@@ -225,6 +238,24 @@
     margin-bottom: 50px;
 }
 .nissan-page__card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 740px;
+    height: 866px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 16px;
+    padding-left: 27px;
+    padding-bottom: 26px;
+    background: rgb(234, 230, 230);
+    margin-right: 40px;
+}
+.nissanm-page__card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 740px;
     height: 866px;
     display: flex;
@@ -237,6 +268,9 @@
     margin-right: 40px;
 }
 .nissanx-page__card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 740px;
     height: 866px;
     display: flex;
@@ -246,13 +280,27 @@
     padding-left: 27px;
     padding-bottom: 26px;
     background: rgb(234, 230, 230);
-    margin-right: 40px;
+}
+.nissant-page__card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 740px;
+    height: 866px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 16px;
+    padding-left: 27px;
+    padding-bottom: 26px;
+    background: rgb(234, 230, 230);
 }
 .card__wr{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 17px;
+    width: 100%;
 }
 .car__price{
     display: flex;
@@ -322,6 +370,11 @@
     margin-bottom: 17px;
     margin-right: 22px;
 }
+.car4{
+    width: 214px;
+    height: 142px;
+    margin-top: -15px;
+}
 /* icon-wrapper page */
 .car__icon-wrapper{
     display: flex;
@@ -364,6 +417,7 @@
 .car__btn-wr{
     display: flex;
     align-items: center;
+    margin-right: 20px;
 }
 .btn__one{
     cursor: pointer;
@@ -593,29 +647,15 @@
     margin-bottom: 32px;
 }
 .equipment__inp{
-    padding: 20px;
-    width: 350px;
-    height: 65px;
+    width: 720px;
+    height: 70px;
     position: relative;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
-.equipment__inpt{
-    padding: 20px;
-    width: 350px;
-    height: 65px;
-    background: #dfdddd;
-    border: none;
-    box-sizing: border-box;
-    padding: 20px;
-    text-transform: uppercase;
-    color: #343434;
-    font-family: 'Open Sans', sans-serif;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+
+
 .down{
   position: absolute;
   background-image: url(/img/down.svg);
@@ -774,10 +814,11 @@ footer{
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: auto;
     padding-top: 22px;
     padding-left: 200px;
     padding-right: 200px;
-    padding-bottom: 86px;
+    padding-bottom: 20px;
     box-sizing: border-box;
     background: #343434;
     color: white;
@@ -805,6 +846,7 @@ footer{
     height: auto;
 }
 .text-o{
+    display: none;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -814,13 +856,13 @@ footer{
 }
 /* popUp */
 .form-feed-back{
+    box-shadow: rgba(141, 141, 163, 0.615) 0px 50px 100px -20px, rgba(170, 159, 159, 0.697) 0px 30px 60px -30px, rgba(191, 219, 248, 0.626) 0px -2px 6px 0px inset;
     display: none;
     width: 880px;
     height: 490px;
-    background-image: url(/img/popup.svg);
+    background-image: url(/img/car.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
     padding: 0;
     padding-right: 435px;
@@ -899,7 +941,6 @@ footer{
 }
 
 .pop-up2{
-    display: none;
     width: 334px;
     height: 364px;
     background-image: url(/img/mini-form.svg);
@@ -913,6 +954,7 @@ footer{
     position: absolute;
     top: 13%;
     box-shadow: 100px 100px 100px 100px rgba(34, 60, 80, 0.2) inset;
+    display: none;
 }
 
 .frm-str2{
@@ -980,7 +1022,7 @@ footer{
 }
 /* mobile version */
 
-@media (min-width:320px) and (max-width:500px) {
+@media (min-width:320px) and (max-width:450px) {
 
     .form-feed-back{
         display: none;
@@ -1057,6 +1099,7 @@ footer{
     .phone__text{
         font-size: 14px;
         white-space: nowrap;
+        color: black;
     }
     .header__btn{
         display: none;
@@ -1131,7 +1174,7 @@ footer{
     }
     .nissan-page__card{
         width: 100%;
-        height: 795px;
+        height: 680px;
         background-image: url(/img/bg-one.svg);
         background-size: cover;
         margin: 0;
@@ -1145,7 +1188,7 @@ footer{
     }
     .nissanx-page__card{
         width: 100%;
-        height: 795px;
+        height: 680px;
         background-image: url(/img/bg-two.svg);
         background-size: cover;
         margin: 0;
@@ -1158,7 +1201,7 @@ footer{
     }
     .nissanm-page__card{
         width: 100%;
-        height: 795px;
+        height: 680px;
         background-image: url(/img/murano.svg);
         background-color: rgba(0,0,0,0.1);
         background-size: contain;
@@ -1176,7 +1219,7 @@ footer{
     .nissant-page__card{
         background-color: rgba(0,0,0,0.1);
         width: 100%;
-        height: 795px;
+        height: 680px;
         background-image: url(/img/bg-four.svg);
         background-size: cover;
         margin: 0;
@@ -1249,37 +1292,61 @@ footer{
         width: 104px;
         height: 70px;
         margin: 0;
+        margin-top: -5px;
     }
     /* icon page */
     .car__icon-wrapper{
         display: flex;
-        width: 100%;
-        flex-direction: column;
-        margin-left: -20px;
-        margin-bottom: 10px;
         align-items: center;
+        width: 334px;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 19px;
+        margin-left: 10px;
     }
     .car__icon{
         display: flex;
         align-items: center;
-        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 87px;
+    }
+    .car__icon .icon__text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        white-space: wrap;
+    }
+    .car__icon .ic-txt{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        white-space: wrap;
+        width: 66px;
     }
     .car__icon-wr1{
         display: flex;
-        flex-direction: column;
+        margin: 0;
+        flex-direction: row;
+        margin-top: -3px;
+
     }
     .car__icon-wr2{
         display: flex;
-        flex-direction: column;
-    }
-    .car__icon-wr1 #casco{
-        margin-left: -4px;
-        white-space: nowrap;
+        margin: 0;
     }
     .car__btn-wr{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 0;
     }
     .btn__one{
         width: 260px;
@@ -1359,7 +1426,9 @@ footer{
     }
     .equipment__inp{
         width: 334px;
-        height: 43px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .down{
         bottom: 10px;
@@ -1371,7 +1440,7 @@ footer{
         flex-direction: column;
         align-items: center;
         margin: 0;
-        margin-top: 20px;
+        margin-top: 50px;
     }
     .blue__car{
         margin-bottom: 9px;
@@ -1495,9 +1564,13 @@ footer{
         display: inline;
         font-size: 16px;
         margin-bottom: 10px;
+        text-decoration: none;
+        cursor: pointer;
     }
     .phone{
         display: inline;
+        cursor: pointer;
+        color: white;
     }
     .footer__text{
         display: none;
@@ -1505,4 +1578,69 @@ footer{
 
 }
 
+@media (min-width:320px) and (max-width:400px) {
+    .car__icon-wrapper{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+    .car__icon{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 60px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+ 
+    .icon__img{
+        width: 40px;
+        height: 40px;
+    }
+    .icon__img img{
+        width: 24px;
+        height: 24px;
+    }
+    .car__icon .icon__text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        white-space: wrap;
+    }
+    .car__icon .ic-txt{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        white-space: wrap;
+        width: 66px;
+    }
+    .car__icon-wr1{
+        display: flex;
+        margin: 0;
+        flex-direction: row;
+        margin-top: -15px;
 
+    }
+    .car__icon-wr2{
+        display: flex;
+        margin: 0;
+    }
+    .car__btn-wr{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+}

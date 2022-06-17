@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <title>Nissan</title>
 </head>
-<body>
+<body style='overflow-x:hidden;'>
     <main class="container">
         <header  class="header">
             <a href="#" class="header__logo">
@@ -19,7 +25,7 @@
                 </h3>
                 <div class="header__wrapper">
                     <div class="header__time">
-                        <h2 id="days">1</h2>
+                        <h2 id="days">01</h2>
                         <small class="small">дней</small>
                     </div>
                     <img src="./img/point.svg" alt="point" class="header__point">
@@ -55,22 +61,22 @@
                 </h3>
                 <div class="header__wrapper">
                     <div class="header__time">
-                        <h2 id="days">1</h2>
+                        <h2 id="days1">01</h2>
                         <small class="small">дней</small>
                     </div>
                     <img src="./img/point.svg" alt="point" class="header__point">
                     <div class="header__time">
-                        <h2 id="hours">11</h2>
+                        <h2 id="hours1">11</h2>
                         <small class="small">часов</small>
                     </div>
                     <img src="./img/point.svg" alt="point" class="header__point">
                     <div class="header__time">
-                        <h2 id="minutes">46</h2>
+                        <h2 id="minutes1">46</h2>
                         <small class="small">минут</small>
                     </div>
                     <img src="./img/point.svg" alt="point" class="header__point">
                     <div class="header__time">
-                        <h2 id="seconds">26</h2>
+                        <h2 id="seconds1">26</h2>
                         <small class="small">секунд</small>
                     </div>
                 </div>
@@ -106,7 +112,7 @@
                             </div>
                         </div>
                         <div class="car__picture">
-                            <img class="car1" src="/img/qashqai1.png" alt="car">
+                            <img class="car1" src='/img/qashqai1.png' alt="car">
                             <div class="car__picture-wr">
                                 <img class="car2" src="/img/qashqai2.png" alt="car">
                                 <img class="car3" src="/img/qashqai3.png" alt="car">
@@ -115,13 +121,13 @@
                         </div>
                         <div class="car__icon-wrapper">
                             <div class="car__icon-wr1">
-                                <div class="car__icon" id="casco">
+                                <div class="car__icon" >
                                     <div class="icon__img">
                                         <img src="/img/car-icon1.svg" alt="icon">
                                     </div>
                                     <p class="icon__text">Trade-in -200 000 ₽ </p>
                                 </div>
-                                <div class="car__icon" id="casco">
+                                <div class="car__icon" >
                                     <div class="icon__img">
                                         <img src="/img/car-icon2.svg" alt="icon">
                                     </div>
@@ -135,11 +141,11 @@
                                     </div>
                                     <p class="icon__text">3 платежа за наш счет</p>
                                 </div>
-                                <div class="car__icon">
+                                <div class="car__icon ">
                                     <div class="icon__img">
                                         <img src="/img/car-icon4.svg" alt="icon">
                                     </div>
-                                    <p class="icon__text">БЕЗ ПЕРВОГО ВЗНОСА</p>
+                                    <p class="icon__text ic-txt">БЕЗ ПЕРВОГО ВЗНОСА</p>
                                 </div>
                             </div>
                         </div>
@@ -341,7 +347,7 @@
                 <input class="benefit__inp" type="tel" placeholder="телефон">
                 <button id="btn-send" class="benefit__btn">рассчитать кредит</button>
                 <label class="benefit__small">
-                    <input class="hidden-check" type="checkbox" name="a" value="true">
+                    <input class="hidden-check" type="checkbox" name="a" value="true" checked>
                     <span class="custom-check2"></span>Согласие на обработку персональных данных
                 </label>
             </form>
@@ -349,8 +355,16 @@
         <section class="equipment">
             <h4 class="equipment__heading">подобрать комплектацию</h4>
             <div class="equipment__inp">
-                <input name="" class="equipment__inpt" placeholder="модель">
-                <span class="down"></span>
+                <select  class="select1" name="model"  style="width: 350px; height: 60px;">
+                    <option></option>
+                    <option>qashqai</option>
+                    <option>murano</option>
+                </select>
+                <select class="select2" name="oil" id="sl2" style="width: 350px; height: 60px;">
+                    <option></option>
+                    <option>1.6</option>
+                    <option>2.5</option>
+                </select>
             </div>
             <div class="equipment__blue">
                 <img class="blue__car" src="/img/blue.png" alt="car">
@@ -403,7 +417,7 @@
                 <input id="inpt-two" class="benefit__inp" type="tel" placeholder="телефон">
                 <button id="btn-send" class="benefit__btn">рассчитать кредит</button>
                 <label id="check" class="benefit__small">
-                    <input class="hidden-check" type="checkbox" name="a" value="">
+                    <input class="hidden-check" type="checkbox" name="a" value="" checked>
                     <span class="custom-check2"></span>Согласие на обработку персональных данных
                 </label>
             </form>
@@ -411,7 +425,7 @@
         <footer>
             <div class="footer__wrapper">
                 <p class="footer__copy">© 2010-2021. Москва, 38км МКАД 6Бc2</p>
-                    <u class="info">Подробная информация</u>
+                    <a class="info">Подробная информация</a>
                     <a href="" class="phone">+7 (495) 121-41-76</a>
             </div>
             <div class="footer__text">
@@ -439,7 +453,7 @@
                     <input  class="benefit__pop" type="tel" placeholder="телефон">
                     <button class="pop__btn">рассчитать кредит</button>
                     <label id="pop-s" class="benefit__small">
-                        <input class="hidden-check" type="checkbox" name="a" value="">
+                        <input class="hidden-check" type="checkbox" name="a" value="" checked>
                         <span class="custom-check2"></span>Согласие на обработку персональных данных
                     </label>
                 </form>
@@ -454,11 +468,28 @@
             <input  class="benefit__pop2" type="tel" placeholder="телефон">
             <button class="pop__btn2">рассчитать кредит</button>
             <label id="pop-s2" class="benefit__small">
-                <input class="hidden-check" type="checkbox" name="a" value="">
+                <input class="hidden-check" type="checkbox" name="a" value="" checked>
                 <span class="custom-check2"></span>Согласие на обработку персональных данных
             </label>
         </div>
     </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
     <script src="main.js"></script>
 </body>
 </html>

@@ -19,12 +19,21 @@ function updateTiming(){
     let hours = document.querySelector('#hours');
     let minutes = document.querySelector('#minutes');
     let seconds = document.querySelector('#seconds');
+
+    let days1 = document.querySelector('#days1');
+    let hours1 = document.querySelector('#hours1');
+    let minutes1 = document.querySelector('#minutes1');
+    let seconds1 = document.querySelector('#seconds1');
     
     // days.innerText = daysLeft;
     
     hours.innerText = hoursLeft < 10 ? '0' + hoursLeft : hoursLeft;
     minutes.innerText = minutesLeft < 10 ? '0' + minutesLeft : minutesLeft;
     seconds.innerText = secondsLeft < 10 ? '0' + secondsLeft : secondsLeft;
+
+    hours1.innerText = hoursLeft < 10 ? '0' + hoursLeft : hoursLeft;
+    minutes1.innerText = minutesLeft < 10 ? '0' + minutesLeft : minutesLeft;
+    seconds1.innerText = secondsLeft < 10 ? '0' + secondsLeft : secondsLeft;
     
 }
 setInterval(updateTiming, 1000);
@@ -49,3 +58,23 @@ closePopUp.addEventListener('click', ()=>{
 closePopUp2.addEventListener('click', ()=>{
     windowPopUp2.style.display ='none'
 })
+let infoOpen = document.querySelector('.info')
+let infoTxt = document.querySelector('.text-o')
+
+infoOpen.addEventListener('click', ()=>{
+    infoTxt.style.display = 'block'
+})
+
+$(document).ready(function() {
+    $('.select1').select2({
+        placeholder: "Модель",
+        allowClear: true
+    });
+});
+$(document).ready(function() {
+    $('#sl2').select2({
+        placeholder: "Двигатель",
+        allowClear: true
+    });
+});
+
