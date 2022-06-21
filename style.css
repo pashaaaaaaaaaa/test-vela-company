@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+input:focus{
+    border: none;
+}
 .container{
     height: auto;
     box-sizing: border-box;
@@ -99,8 +102,29 @@
  display: none;
 }
 .header__point{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -20px;
+}
+.select2-container--default .select2-selection--single{
+    padding: 20px;
+}
+.select2-container--open .select2-dropdown--below{
+    margin-top: -18px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    margin-top: -15px;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    margin-top: 7px;
+    margin-right: 10px;
+}
+.select2-container--default .select2-selection--single{
+    margin-bottom: 10px;
 }
 .header__phone{
     display: flex;
@@ -140,7 +164,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-image: url(./img/banner.png);
+    background-image: url(img/banner.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -247,7 +271,7 @@
     flex-direction: column;
     box-sizing: border-box;
     padding-top: 16px;
-    padding-left: 27px;
+    padding-left: 14px;
     padding-bottom: 26px;
     background: rgb(234, 230, 230);
     margin-right: 40px;
@@ -262,7 +286,7 @@
     flex-direction: column;
     box-sizing: border-box;
     padding-top: 16px;
-    padding-left: 27px;
+    padding-left: 14px;
     padding-bottom: 26px;
     background: rgb(234, 230, 230);
     margin-right: 40px;
@@ -277,7 +301,7 @@
     flex-direction: column;
     box-sizing: border-box;
     padding-top: 16px;
-    padding-left: 27px;
+    padding-left: 14px;
     padding-bottom: 26px;
     background: rgb(234, 230, 230);
 }
@@ -291,7 +315,7 @@
     flex-direction: column;
     box-sizing: border-box;
     padding-top: 16px;
-    padding-left: 27px;
+    padding-left: 14px;
     padding-bottom: 26px;
     background: rgb(234, 230, 230);
 }
@@ -350,7 +374,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
 }
 
 
@@ -455,6 +478,7 @@
 .car__icon-wrapper{
     display: flex;
     align-items: center;
+    padding-top: 10px;
 }
 .car__icon-wr1{
     display: flex;
@@ -541,7 +565,7 @@
 .benefit__red{
     width: 1200px;
     height: 574px;
-    background-image: url(/img/red.png);
+    background-image: url(img/red.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -602,7 +626,7 @@
     display: inline-block;
     width: 21px;
     height: 21px;
-    background: url(/img/check.svg);
+    background: url(img/check.svg);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -617,7 +641,7 @@
     display: inline-block;
     width: 14px;
     height: 14px;
-    background: url(/img/check.svg);
+    background: url(img/check.svg);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -730,13 +754,10 @@
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.select1{
-    border: 1px solid red;
-}
 
 .down{
   position: absolute;
-  background-image: url(/img/down.svg);
+  background-image: url(img/down.svg);
   width: 13px;
   height: 6px;
   right: 20px;
@@ -830,7 +851,7 @@
     position: relative;
     margin-top: 76px;
     width: 100%;
-    background-image: url(/img/map.png);
+    background-image: url(img/map.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -933,12 +954,13 @@ footer{
     color: #FFFFFF;
 }
 /* popUp */
+
 .form-feed-back{
-    box-shadow: rgba(141, 141, 163, 0.615) 0px 50px 100px -20px, rgba(170, 159, 159, 0.697) 0px 30px 60px -30px, rgba(191, 219, 248, 0.626) 0px -2px 6px 0px inset;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 60px 100px -10px, rgba(0, 0, 0, 0.3) 0px 40px 70px -20px, rgba(10, 37, 64, 0.35) 0px -2px 7px 0px inset;
     display: none;
     width: 880px;
     height: 490px;
-    background-image: url(/img/car.svg);
+    background-image: url(img/car.svg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -947,7 +969,7 @@ footer{
     box-sizing: border-box;
     position: absolute;
     top: 2%;
-    left: 40%;
+    left: 25%;
 }
 .frm-fb{
     width: 100%;
@@ -1021,7 +1043,7 @@ footer{
 .pop-up2{
     width: 334px;
     height: 364px;
-    background-image: url(/img/mini-form.svg);
+    background-image: url(img/mini-form.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1184,7 +1206,7 @@ footer{
     }
     /* banner psge */
     .banner{
-        background-image: url(/img/banner-min.png);
+        background-image: url(img/banner-min.png);
         height: 753px;
         width: 100%;
         position: relative;
@@ -1253,7 +1275,7 @@ footer{
     .nissan-page__card{
         width: 100%;
         height: 680px;
-        background-image: url(/img/bg-one.svg);
+        background-image: url(img/bg-one.svg);
         background-size: cover;
         margin: 0;
         box-sizing: border-box;
@@ -1267,7 +1289,7 @@ footer{
     .nissanx-page__card{
         width: 100%;
         height: 680px;
-        background-image: url(/img/bg-two.svg);
+        background-image: url(img/bg-two.svg);
         background-size: cover;
         margin: 0;
         box-sizing: border-box;
@@ -1280,7 +1302,7 @@ footer{
     .nissanm-page__card{
         width: 100%;
         height: 680px;
-        background-image: url(/img/murano.svg);
+        background-image: url(img/murano.svg);
         background-color: rgba(0,0,0,0.1);
         background-size: contain;
         background-repeat: no-repeat;
@@ -1298,7 +1320,7 @@ footer{
         background-color: rgba(0,0,0,0.1);
         width: 100%;
         height: 680px;
-        background-image: url(/img/bg-four.svg);
+        background-image: url(img/bg-four.svg);
         background-size: cover;
         margin: 0;
         box-sizing: border-box;
@@ -1342,7 +1364,6 @@ footer{
         align-items: center;
         margin: 0;
         margin-bottom: 13px;
-        border: 1px solid red;
     }
     .car__picture-wr{
         margin: 0;
@@ -1358,14 +1379,12 @@ footer{
         height: 70px;
         margin: 0;
         margin-bottom: 5px;
-        margin-right: 7px;
     }
     .car3{
         width: 104px;
         height: 70px;
         margin: 0;
         margin-bottom: 5px;
-        margin-right: 7px;
     }
     .car4{
         width: 104px;
@@ -1379,9 +1398,11 @@ footer{
         align-items: center;
         width: 334px;
         padding: 0;
+        padding-top: 10px;
         margin: 0;
         margin-bottom: 19px;
         margin-left: 10px;
+        
     }
     .car__icon{
         display: flex;
@@ -1444,7 +1465,7 @@ footer{
         margin: 0;
     }
     .benefit__form{
-        background-image: url(/img/orange.svg);
+        background-image: url(img/orange.svg);
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
@@ -1548,7 +1569,7 @@ footer{
     .map{
         display: flex;
         flex-direction: column;
-        background-image: url(/img/mini-map.svg);
+        background-image: url(img/mini-map.svg);
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
@@ -1646,10 +1667,16 @@ footer{
         text-decoration: none;
         cursor: pointer;
     }
+    .info:hover{
+        text-decoration: underline;
+    }
     .phone{
         display: inline;
         cursor: pointer;
         color: white;
+    }
+    .phone:hover{
+        text-decoration: underline;
     }
     .footer__text{
         display: none;
@@ -1666,6 +1693,8 @@ footer{
         margin: 0;
         margin-bottom: 15px;
         box-sizing: border-box;
+        padding-top: 7px;
+        margin-left: 20px;
     }
     .car__icon{
         display: flex;

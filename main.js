@@ -68,13 +68,13 @@ infoOpen.addEventListener('click', ()=>{
 $(document).ready(function() {
     $('.select1').select2({
         placeholder: "Модель",
-        allowClear: true
+        // allowClear: true
     });
 });
 $(document).ready(function() {
     $('#sl2').select2({
         placeholder: "Двигатель",
-        allowClear: true
+        // allowClear: true
     });
 });
 
