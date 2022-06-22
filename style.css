@@ -14,11 +14,14 @@ input:focus{
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    width: 1920px;
+    max-width: 1920px;
+    width: 100%;
     position: relative;
 }
 /* header page */
 .header{
+    margin: 0 auto;
+    max-width: 1920px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -32,6 +35,10 @@ input:focus{
     width: 90px;
     height: 75px;
     margin-right: 120px;
+    background-image: url(img/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .header__timing{
     display: flex;
@@ -161,6 +168,8 @@ input:focus{
 /* banner page */
 
 .banner{
+    margin: 0 auto;
+    max-width: 1920px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -234,21 +243,25 @@ input:focus{
 /* nissan-page */
 .nissan-page__wrapper{
     display: flex;
-    width: 1520px;
+    max-width: 1520px;
     box-sizing: border-box;
     margin-bottom: 73px;
 }
 .nissan-page__wrapper2{
     display: flex;
-    width: 1520px;
+    max-width: 1520px;
     box-sizing: border-box;
     margin-bottom: 100px;
 }
 .nissan-page{
+    max-width: 1920px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin: 0 auto;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 .nissan-page__text{
     text-align: center;
@@ -558,7 +571,9 @@ input:focus{
 }
 /* benefit page */
 .benefit{
+    margin: 0 auto;
     display: flex;
+    max-width: 1920px;
     width: 100%;
     margin-bottom: 100px;
 }
@@ -734,6 +749,7 @@ input:focus{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
 }
 .equipment__heading{
     text-align: center;
@@ -848,8 +864,12 @@ input:focus{
 }
 /* map page */
 .map{
+    margin: 0 auto;
     position: relative;
     margin-top: 76px;
+    max-width: 1920px;
+    padding-top: 77px;
+    padding-bottom: 76px;
     width: 100%;
     background-image: url(img/map.png);
     background-position: center;
@@ -910,8 +930,10 @@ input:focus{
 }
 /* footer page */
 footer{
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    max-width: 1920px;
     width: 100%;
     height: auto;
     padding-top: 22px;
@@ -1052,9 +1074,11 @@ footer{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 13%;
+    top: 55%;
+    left: 5%;
     box-shadow: 100px 100px 100px 100px rgba(34, 60, 80, 0.2) inset;
     display: none;
+    z-index: 100;
 }
 
 .frm-str2{
@@ -1122,7 +1146,7 @@ footer{
 }
 /* mobile version */
 
-@media (min-width:320px) and (max-width:450px) {
+@media (min-width:375px) and (max-width:768px) {
 
     .form-feed-back{
         display: none;
@@ -1249,12 +1273,17 @@ footer{
         display: none;
     }
     /* nissan page */
+    .nissan-page{
+        padding: 0;
+        margin: 0;
+    }
     .nissan-page__wrapper{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0;
+        padding: 0;
         margin-bottom: 20px;
     }
     .nissan-page__wrapper2{
@@ -1263,6 +1292,7 @@ footer{
         flex-direction: column;
         align-items: center;
         margin: 0;
+        padding: 0;
         margin-bottom: 20px;
     }
     .nissan-page__text{
@@ -1279,6 +1309,7 @@ footer{
         background-size: cover;
         margin: 0;
         box-sizing: border-box;
+        padding: 0;
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 8px;
@@ -1510,6 +1541,8 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 1920px;
+        width: 100%;
     }
     .equipment__heading{
         width: 250px;
@@ -1567,6 +1600,7 @@ footer{
     }
     /* map page */
     .map{
+        width: 100%;
         display: flex;
         flex-direction: column;
         background-image: url(img/mini-map.svg);
@@ -1684,6 +1718,594 @@ footer{
 
 }
 
+
+@media (min-width:320px) and (max-width:375px) {
+
+
+    .form-feed-back{
+        display: none;
+    }
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .header{
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        padding-right: 15px;
+    }
+    .header__logo{
+        width: 63px;
+        height: 62px;
+        margin-right: 90px;
+    }
+    .header__timing{
+        display: none;
+    }
+    .header__timingg{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 10px;
+        height: 175px;
+        width: 100%;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        z-index: 100;
+        justify-content: center;
+        text-align: left;
+        padding: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+
+    }
+    .header__text{
+        width: 280px;
+        height: 26px;
+        font-weight: 400;
+        font-size: 18px;
+        color: white;
+        white-space: nowrap;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .header__wrapper{
+        width: 280px;
+        height: 65px;
+    }
+    .small{
+        color: white;
+    }
+    .timing__btn{
+        display: block;
+        width: 300px;
+        height: 43px;
+        margin-top: 13px;
+    }
+    .header__point{
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    .phone__icon{
+        width: 30px;
+        height: 30px;
+    }
+    .phone__text{
+        font-size: 14px;
+        white-space: nowrap;
+        color: black;
+    }
+    .header__btn{
+        display: none;
+    }
+    /* banner psge */
+    .banner{
+        background-image: url(img/banner-min.png);
+        height: 753px;
+        width: 100%;
+        position: relative;
+        background-size: contain;
+        background-position: center;
+        box-sizing: border-box;
+        margin-bottom: 26px;
+    }
+    .banner__stock{
+        display: none;
+    }
+    .stock__text{
+        display: none;
+    }
+    .banner__sale{
+        background: #FFFFFF;
+        margin: 0;
+        opacity: 0.7;
+        width: 100%;
+        height: 160px;
+        box-sizing: border-box;
+        padding: 15px 20px;
+    }
+    #strong{
+        font-size: 24px;
+        font-weight: bold;
+        color: #C3002F;
+        margin-bottom: 9px;
+    }
+    .sale__text{
+        font-size: 24px;
+        font-weight: 400;
+        color: #C3002F;
+        text-align: center;
+    }
+    .none{
+        display: block;
+    }
+    .banner__btn{
+        display: none;
+    }
+    /* nissan page */
+    .nissan-page{
+        padding: 0;
+        margin: 0;
+    }
+    .nissan-page__wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .nissan-page__wrapper2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .nissan-page__text{
+        font-weight: 700;
+        font-size: 28px;
+        text-align: center;
+        white-space: nowrap;
+        margin-bottom: 20px;
+    }
+    .nissan-page__card{
+        width: 100%;
+        height: 680px;
+        background-image: url(img/bg-one.svg);
+        background-size: cover;
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 8px;
+        margin-bottom: 20px;
+        position: relative;
+        left: 0;
+    }
+    .nissanx-page__card{
+        width: 100%;
+        height: 680px;
+        background-image: url(img/bg-two.svg);
+        background-size: cover;
+        margin: 0;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 8px;
+        position: relative;
+        left: 0;
+    }
+    .nissanm-page__card{
+        width: 100%;
+        height: 680px;
+        background-image: url(img/murano.svg);
+        background-color: rgba(0,0,0,0.1);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        margin: 0;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 8px;
+        position: relative;
+        left: 0;
+        margin-bottom: 20px;
+    }
+    .nissant-page__card{
+        background-color: rgba(0,0,0,0.1);
+        width: 100%;
+        height: 680px;
+        background-image: url(img/bg-four.svg);
+        background-size: cover;
+        margin: 0;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 8px;
+        position: relative;
+        left: 0;
+    }
+    .card__wr{
+        display: flex;
+        flex-direction: column;
+        margin-left: -20px;
+    }
+    .car__name{
+        font-size: 26px;
+        text-align: left;
+    }
+    .car__price{
+        margin: 0;
+        padding: 0;
+    }
+    .car__text{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .car__img{
+        transform: rotate(180deg);
+        left: -110px;
+        position: relative;
+        width: 238px;
+        height: 46px;
+    }
+    .smalll{
+        transform: rotate(180deg);
+        font-size: 18px;
+        left: 27px;
+    }
+    .car__picture{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 13px;
+    }
+    .car__picture-wr{
+        margin: 0;
+    }
+    .car1{
+        width: 334px;
+        height: 175px;
+        margin: 0;
+        margin-bottom: 7px;
+    }
+    .car2{
+        width: 104px;
+        height: 70px;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    .car3{
+        width: 104px;
+        height: 70px;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    .car4{
+        width: 104px;
+        height: 70px;
+        margin: 0;
+        margin-top: -5px;
+    }
+    /* icon page */
+    .car__icon-wrapper{
+        display: flex;
+        align-items: center;
+        width: 320px;
+        padding: 0;
+        padding-top: 10px;
+        margin: 0;
+        margin-bottom: 19px;
+        margin-left: 7px;
+        
+    }
+    .car__icon{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 87px;
+        margin: 0;
+    }
+    .car__icon .icon__text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        white-space: wrap;
+    }
+    .car__icon .ic-txt{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        white-space: wrap;
+        width: 66px;
+    }
+    .car__icon-wr1{
+        display: flex;
+        margin: 0;
+        flex-direction: row;
+        margin-top: -3px;
+
+    }
+    .car__icon-wr2{
+        display: flex;
+        margin: 0;
+    }
+    .car__btn-wr{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .btn__one{
+        width: 260px;
+        height: 43px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .btn__two{
+        width: 260px;
+        height: 43px;
+    }
+    /* benefit page */
+    .benefit{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .benefit__form{
+        background-image: url(img/orange.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 373px;
+        box-sizing: border-box;
+        padding: 19px 20px;
+        margin-bottom: 50px;
+        margin-top: 30px;
+
+    }
+    .benefit__heading{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 44px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .benefit__text{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 120%;
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        color: #FFFFFF;
+        white-space: nowrap;
+    }
+    .benefit__red{
+        display: none;
+    }
+    .benefit__inp, 
+    .benefit__inp1,
+    .benefit__btn,
+    .benefit__small{
+        display: none;
+    }
+    /* equipment page */
+    .equipment{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1920px;
+        width: 100%;
+    }
+    .equipment__heading{
+        width: 250px;
+        white-space: wrap;
+        text-align: center;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 32px;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        color: #343434;
+        margin-bottom: 20px;
+    }
+    .equipment__inp{
+        width: 334px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .equipment__blue{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        margin-top: 50px;
+    }
+    .blue__car{
+        width: 320px;
+        height: 120px;
+        margin-bottom: 9px;
+    }
+    .equipment__price{
+        margin-bottom: 9px;
+    }
+    .speed{
+        margin-bottom: 20px;
+    }
+    .equipment__btn{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .blue__btn1{
+        width: 235px;
+        height: 43px;
+        margin-bottom: 10px;
+    }
+    .blue__btn2{
+        width: 235px;
+        height: 43px;
+    }
+    /* map page */
+    .map{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-image: url(img/mini-map.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 17px;
+        height: 600px;
+    }
+    .map__form{
+        margin: 0;
+        width: 100%;
+        height: 370px;
+        background: #343434;
+        border: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    .map__logo{
+        display: none;
+    }
+    .map__logo-sm{
+        display: block;
+        width: 93px;
+        height: 77px;
+        margin-bottom: 12px;
+    }
+    .form__phone{
+        color: #C3002F;
+        font-size: 22px;
+        margin-bottom: 17px;
+    }
+    #inpt-one{
+        display: block;
+        background: white;
+        opacity: inherit;
+        width: 260px;
+        height: 38px;
+        margin: 0;
+        margin-bottom: 10px;
+        z-index: 10;
+    }
+    #inpt-two{
+        display: block;
+        opacity: inherit;
+        background: white;
+        width: 260px;
+        height: 38px;
+        margin-bottom: 15px;
+        border: none;
+        z-index: 10;
+    }
+    #btn-send{
+        display: block;
+        width: 260px;
+        padding: 10px;
+        background: #C3002F;
+        color: white;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    #check{
+        display: block;
+        width: 200px;
+        white-space: wrap;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: white;
+    }
+    #check .custom-check2{
+        width: 40px;
+        height: 20px;
+    }
+    .select2-container--default .select2-selection--single{
+        width: 320px;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+        left: 290px;
+    }
+    /* footer page */
+    footer{
+        width: 100%;
+        padding: 12px 20px;
+    }
+    .footer__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__copy{
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .info{
+        display: inline;
+        font-size: 16px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .info:hover{
+        text-decoration: underline;
+    }
+    .phone{
+        display: inline;
+        cursor: pointer;
+        color: white;
+    }
+    .phone:hover{
+        text-decoration: underline;
+    }
+    .footer__text{
+        display: none;
+    }
+    .pop-up2{
+        left: 0;
+        width: 320px;
+        padding-left: 10px;
+    }
+
+}
+
 @media (min-width:320px) and (max-width:400px) {
     .car__icon-wrapper{
         display: flex;
@@ -1701,8 +2323,8 @@ footer{
         align-items: center;
         flex-direction: column;
         width: 60px;
-        margin-right: 10px;
-        margin-left: 10px;
+        /* margin-right: 10px; */
+        margin-left: 15px;
     }
  
     .icon__img{
@@ -1752,3 +2374,4 @@ footer{
         margin: 0;
     }
 }
+@import url(style2.css);
