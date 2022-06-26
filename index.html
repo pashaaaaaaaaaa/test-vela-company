@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="popUp.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link
@@ -89,10 +90,10 @@
                 <h3 class="stock__text">Уникальная акция на nissan только эту неделю!</h3>
             </div>
             <div class="banner__sale">
-                <p class="sale__text" id="strong" >РАСПРОДАЖА СКЛАДА <br class="none"> NISSAN</p>
+                <p class="sale__text strong">РАСПРОДАЖА СКЛАДА <br class="none"> NISSAN</p>
                 <p class="sale__text">ПРОДАЕМ 23 автомобиля <br class="none"> НИЖЕ ПРАЙСА!</p>
             </div>
-            <button class="banner__btn">оставить заявку</button>
+            <button class="banner__btn header__btn">оставить заявку</button>
         </section>
         <!-- card first page -->
 
@@ -233,13 +234,13 @@
                  
                         <div class="car__icon-wrapper">
                             <div class="car__icon-wr1">
-                                <div class="car__icon" id="casco">
+                                <div class="car__icon">
                                     <div class="icon__img">
                                         <img src="img/car-icon1.svg" alt="icon">
                                     </div>
                                     <p class="icon__text">Trade-in -200 000 ₽ </p>
                                 </div>
-                                <div class="car__icon" id="casco">
+                                <div class="car__icon">
                                     <div class="icon__img">
                                         <img src="img/car-icon2.svg" alt="icon">
                                     </div>
@@ -317,13 +318,13 @@
                         <!-- swiper -->
                         <div class="car__icon-wrapper">
                             <div class="car__icon-wr1">
-                                <div class="car__icon" id="casco">
+                                <div class="car__icon">
                                     <div class="icon__img">
                                         <img src="img/car-icon1.svg" alt="icon">
                                     </div>
                                     <p class="icon__text">Trade-in -200 000 ₽ </p>
                                 </div>
-                                <div class="car__icon" id="casco">
+                                <div class="car__icon">
                                     <div class="icon__img">
                                         <img src="img/car-icon2.svg" alt="icon">
                                     </div>
@@ -400,13 +401,13 @@
                         <!-- swiper -->
                         <div class="car__icon-wrapper">
                             <div class="car__icon-wr1">
-                                <div class="car__icon" id="casco">
+                                <div class="car__icon">
                                     <div class="icon__img">
                                         <img src="img/car-icon1.svg" alt="icon">
                                     </div>
                                     <p class="icon__text">Trade-in -200 000 ₽ </p>
                                 </div>
-                                <div class="car__icon" id="casco">
+                                <div class="car__icon">
                                     <div class="icon__img" >
                                         <img src="img/car-icon2.svg" alt="icon">
                                     </div>
@@ -453,7 +454,7 @@
                 </label>
                 <input class="benefit__inp1" type="text" placeholder="имя">
                 <input class="benefit__inp" type="tel" placeholder="телефон">
-                <button id="btn-send" class="benefit__btn">рассчитать кредит</button>
+                <button class="benefit__btn btn-send">рассчитать кредит</button>
                 <label class="benefit__small">
                     <input class="hidden-check" type="checkbox" name="a" value="true" checked>
                     <span class="custom-check2"></span>Согласие на обработку персональных данных
@@ -523,10 +524,10 @@
                 <img class="map__logo" src="img/small-logo.png" alt="logo">
                 <img class="map__logo-sm" src="img/logo-small.png" alt="logo">
                 <p class="form__phone">+7 (495) 730-11-35</p>
-                <input id="inpt-one" class="benefit__inp1" type="text" placeholder="имя">
-                <input id="inpt-two" class="benefit__inp" type="tel" placeholder="телефон">
-                <button id="btn-send" class="benefit__btn">рассчитать кредит</button>
-                <label id="check" class="benefit__small">
+                <input  class="benefit__inp1 inpt-one" type="text" placeholder="имя">
+                <input  class="benefit__inp inpt-two" type="tel" placeholder="телефон">
+                <button  class="benefit__btn btn-send">рассчитать кредит</button>
+                <label class="benefit__small check">
                     <input class="hidden-check" type="checkbox" name="a" value="" checked>
                     <span class="custom-check2"></span>Согласие на обработку персональных данных
                 </label>
@@ -552,37 +553,47 @@
                     ИНН 9725002820</p>
             </div>
         </footer>
-            <div class="form-feed-back">
-                <button class="form-close">&#10006</button>
-                <div class="frm-fb">
-                    <h3 class="frm-str">Заполните заявку<br> 
-                        на персональное<br>
-                        предложение</h3>
-                    <form action="" class="pop-up">
-                        <input  class="benefit__pop" type="text" placeholder="имя">
-                        <input  class="benefit__pop" type="tel" placeholder="телефон">
-                        <button class="pop__btn">рассчитать кредит</button>
-                        <label id="pop-s" class="benefit__small">
+        <div class="custom-model-main">
+            <div class="custom-model-inner">        
+            <div class="close-btn">&#10006</div>
+                    <div class="form-feed-back">
+                        <div class="frm-fb">
+                            <h3 class="frm-str">Заполните заявку<br> 
+                                на персональное<br>
+                                предложение</h3>
+                            <form action="" class="pop-up">
+                                <input  class="benefit__pop" type="text" placeholder="имя">
+                                <input  class="benefit__pop" type="tel" placeholder="телефон">
+                                <button class="pop__btn">рассчитать кредит</button>
+                                <label class="benefit__small pop-s">
+                                    <input class="hidden-check" type="checkbox" name="a" value="" checked>
+                                    <span class="custom-check2"></span>Согласие на обработку персональных данных
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>  
+            <div class="bg-overlay"></div>
+        </div> 
+        <div class="custom-model-main2">
+            <div class="custom-model-inner2">
+                <div class="close-btn2">&#10006</div>
+                    <div  class="pop-up2">
+                        <h3 class="frm-str2">Заполните заявку<br> 
+                            на персональное<br>
+                            предложение</h3>
+                        <input  class="benefit__pop2" type="text" placeholder="имя">
+                        <input  class="benefit__pop2" type="tel" placeholder="телефон">
+                        <button class="pop__btn2">рассчитать кредит</button>
+                        <label  class="benefit__small pop-s2">
                             <input class="hidden-check" type="checkbox" name="a" value="" checked>
                             <span class="custom-check2"></span>Согласие на обработку персональных данных
                         </label>
-                    </form>
-                </div>
-            </div>
-        <div  class="pop-up2">
-            <button class="form-close2">&#10006</button>
-            <h3 class="frm-str2">Заполните заявку<br> 
-                на персональное<br>
-                предложение</h3>
-            <input  class="benefit__pop2" type="text" placeholder="имя">
-            <input  class="benefit__pop2" type="tel" placeholder="телефон">
-            <button class="pop__btn2">рассчитать кредит</button>
-            <label id="pop-s2" class="benefit__small">
-                <input class="hidden-check" type="checkbox" name="a" value="" checked>
-                <span class="custom-check2"></span>Согласие на обработку персональных данных
-            </label>
-        </div>
-    <!-- </main>  -->
+                    </div> 
+                </div>  
+            <div class="bg-overlay2"></div>
+        </div> 
+      
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>

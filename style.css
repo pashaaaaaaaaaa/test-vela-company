@@ -714,7 +714,7 @@ input:focus{
 .benefit__inp1::-webkit-input-placeholder {
     text-align:center;
 }
-#btn-send{
+.btn-send{
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -790,7 +790,7 @@ input:focus{
     margin-bottom: 24px;
 }
 .blue__car{
-    width: 350px;
+    width: auto;
     height: 124px;
 }
 .equipment__model, .speed{
@@ -976,10 +976,9 @@ footer{
     color: #FFFFFF;
 }
 /* popUp */
-
 .form-feed-back{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 60px 100px -10px, rgba(0, 0, 0, 0.3) 0px 40px 70px -20px, rgba(10, 37, 64, 0.35) 0px -2px 7px 0px inset;
-    display: none;
+    display: flex;
     width: 880px;
     height: 490px;
     background-image: url(img/car.svg);
@@ -989,9 +988,8 @@ footer{
     padding: 0;
     padding-right: 435px;
     box-sizing: border-box;
-    position: absolute;
-    top: 2%;
-    left: 25%;
+    text-align: left;
+    z-index: 100;
 }
 .frm-fb{
     width: 100%;
@@ -1053,7 +1051,7 @@ footer{
     border: none;
     margin-bottom: 20px;
 }
-#pop-s{
+.pop-s{
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -1063,21 +1061,18 @@ footer{
 }
 
 .pop-up2{
-    width: 334px;
+    width: 100%;
     height: 364px;
     background-image: url(img/mini-form.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 20px;
+    padding: 30px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 55%;
-    left: 5%;
     box-shadow: 100px 100px 100px 100px rgba(34, 60, 80, 0.2) inset;
-    display: none;
+    display: flex;
     z-index: 100;
 }
 
@@ -1131,7 +1126,7 @@ footer{
     margin-bottom: 18px;
     margin-top: 5px;
 }
-#pop-s2{
+.pop-s2{
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -1140,20 +1135,15 @@ footer{
     color: #FFFFFF;
     white-space: nowrap;
 }
-#pop-s2 .custom-check2{
+.pop-s2 .custom-check2{
     margin: 0;
     margin-right: 5px;
 }
 /* mobile version */
 
-@media (min-width:375px) and (max-width:768px) {
-
+@media (min-width:375px) and (max-width:769px) {
     .form-feed-back{
         display: none;
-    }
-    .container{
-        width: 100%;
-        margin: 0 auto;
     }
     .header{
         padding-top: 10px;
@@ -1175,7 +1165,7 @@ footer{
         justify-content: center;
         align-items: center;
         bottom: 10px;
-        height: 175px;
+        height: auto;
         width: 100%;
         left: 0;
         margin: 0;
@@ -1186,7 +1176,10 @@ footer{
         justify-content: center;
         text-align: left;
         padding: 0;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+        background-color: rgba(0, 0, 0, 0.4);
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
 
     }
     .header__text{
@@ -1200,7 +1193,7 @@ footer{
         margin: 0;
     }
     .header__wrapper{
-        width: 332px;
+        width: 350px;
         height: 65px;
     }
     .small{
@@ -1208,7 +1201,7 @@ footer{
     }
     .timing__btn{
         display: block;
-        width: 334px;
+        width: 350px;
         height: 43px;
         margin-top: 13px;
     }
@@ -1250,11 +1243,11 @@ footer{
         margin: 0;
         opacity: 0.7;
         width: 100%;
-        height: 160px;
+        height: auto;
         box-sizing: border-box;
         padding: 15px 20px;
     }
-    #strong{
+    .strong{
         font-size: 26px;
         font-weight: bold;
         color: #C3002F;
@@ -1312,10 +1305,14 @@ footer{
         padding: 0;
         padding-left: 20px;
         padding-right: 20px;
+        padding-bottom: 20px;
         padding-top: 8px;
         margin-bottom: 20px;
         position: relative;
         left: 0;
+    }
+    .nissan-page__card .car__icon .ic-txt {
+        width: auto;
     }
     .nissanx-page__card{
         width: 100%;
@@ -1380,7 +1377,7 @@ footer{
     }
     .car__img{
         transform: rotate(180deg);
-        left: -110px;
+        left:-39px;
         position: relative;
         width: 238px;
         height: 46px;
@@ -1520,7 +1517,7 @@ footer{
     }
     .benefit__text{
         font-weight: 400;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 120%;
         text-transform: uppercase;
         font-family: 'Open Sans', sans-serif;
@@ -1558,15 +1555,12 @@ footer{
         margin-bottom: 20px;
     }
     .equipment__inp{
-        width: 334px;
+        width: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .down{
-        bottom: 10px;
-        right: 5px;
-    }
+   
     .equipment__blue{
         width: 100%;
         display: flex;
@@ -1637,7 +1631,7 @@ footer{
         font-size: 22px;
         margin-bottom: 17px;
     }
-    #inpt-one{
+    .inpt-one{
         display: block;
         background: white;
         opacity: inherit;
@@ -1647,7 +1641,7 @@ footer{
         margin-bottom: 10px;
         z-index: 10;
     }
-    #inpt-two{
+    .inpt-two{
         display: block;
         opacity: inherit;
         background: white;
@@ -1657,7 +1651,7 @@ footer{
         border: none;
         z-index: 10;
     }
-    #btn-send{
+    .btn-send{
         display: block;
         width: 294px;
         padding: 10px;
@@ -1666,7 +1660,7 @@ footer{
         margin: 0;
         margin-bottom: 15px;
     }
-    #check{
+    .check{
         display: block;
         width: 200px;
         white-space: wrap;
@@ -1676,7 +1670,7 @@ footer{
         font-size: 14px;
         color: white;
     }
-    #check .custom-check2{
+    .check .custom-check2{
         width: 40px;
         height: 20px;
     }
@@ -1724,10 +1718,6 @@ footer{
 
     .form-feed-back{
         display: none;
-    }
-    .container{
-        width: 100%;
-        margin: 0 auto;
     }
     .header{
         padding-top: 10px;
@@ -1825,11 +1815,11 @@ footer{
         margin: 0;
         opacity: 0.7;
         width: 100%;
-        height: 160px;
+        height: auto;
         box-sizing: border-box;
         padding: 15px 20px;
     }
-    #strong{
+    .strong{
         font-size: 24px;
         font-weight: bold;
         color: #C3002F;
@@ -1955,7 +1945,7 @@ footer{
     }
     .car__img{
         transform: rotate(180deg);
-        left: -110px;
+        left: -30px;
         position: relative;
         width: 238px;
         height: 46px;
@@ -1963,7 +1953,7 @@ footer{
     .smalll{
         transform: rotate(180deg);
         font-size: 18px;
-        left: 27px;
+        left: auto;
     }
     .car__picture{
         display: flex;
@@ -2043,7 +2033,7 @@ footer{
         display: flex;
         margin: 0;
         flex-direction: row;
-        margin-top: -3px;
+        margin-top: -15px;
 
     }
     .car__icon-wr2{
@@ -2097,7 +2087,7 @@ footer{
     }
     .benefit__text{
         font-weight: 400;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 120%;
         text-transform: uppercase;
         font-family: 'Open Sans', sans-serif;
@@ -2150,7 +2140,7 @@ footer{
         margin-top: 50px;
     }
     .blue__car{
-        width: 320px;
+        width: 100%;
         height: 120px;
         margin-bottom: 9px;
     }
@@ -2214,7 +2204,7 @@ footer{
         font-size: 22px;
         margin-bottom: 17px;
     }
-    #inpt-one{
+    .inpt-one{
         display: block;
         background: white;
         opacity: inherit;
@@ -2224,7 +2214,7 @@ footer{
         margin-bottom: 10px;
         z-index: 10;
     }
-    #inpt-two{
+    .inpt-two{
         display: block;
         opacity: inherit;
         background: white;
@@ -2234,7 +2224,7 @@ footer{
         border: none;
         z-index: 10;
     }
-    #btn-send{
+    .btn-send{
         display: block;
         width: 260px;
         padding: 10px;
@@ -2243,7 +2233,14 @@ footer{
         margin: 0;
         margin-bottom: 15px;
     }
-    #check{
+    .blue__btn1,
+    .blue__btn2{
+        margin: 0;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    .check{
         display: block;
         width: 200px;
         white-space: wrap;
@@ -2253,7 +2250,7 @@ footer{
         font-size: 14px;
         color: white;
     }
-    #check .custom-check2{
+    .check .custom-check2{
         width: 40px;
         height: 20px;
     }
@@ -2299,9 +2296,10 @@ footer{
         display: none;
     }
     .pop-up2{
-        left: 0;
-        width: 320px;
-        padding-left: 10px;
+        box-shadow: 100px 100px 100px 100px rgba(34, 60, 80, 0.2) inset;
+        display: flex;
+        width: 100%;
+        padding: 20px;
     }
 
 }
@@ -2374,4 +2372,41 @@ footer{
         margin: 0;
     }
 }
+@media (min-width:410px) and (max-width:416px) {
+    .car__img{
+        transform: rotate(180deg);
+        left:-54px;
+        position: relative;
+        width: 238px;
+        height: 46px;
+    }
+}
+@media (min-width:413px) and (max-width:416px) {
+    .car__img{
+        transform: rotate(180deg);
+        left:-54px;
+        position: relative;
+        width: 238px;
+        height: 46px;
+    }
+}
+@media (min-width:388px) and (max-width:393px) {
+    .car__img{
+        transform: rotate(180deg);
+        left:-45px;
+        position: relative;
+        width: 238px;
+        height: 46px;
+    }
+}
+@media (min-width:392px) and (max-width:395px) {
+    .car__img{
+        transform: rotate(180deg);
+        left:-47px;
+        position: relative;
+        width: 238px;
+        height: 46px;
+    }
+}
 @import url(style2.css);
+@import url(popUp.css);
